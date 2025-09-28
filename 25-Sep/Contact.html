@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact page with form for email, phone, message, and city suggestions.">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+    }
+    fieldset {
+      margin-bottom: 15px;
+      padding: 10px;
+    }
+    label {
+      display: block;
+      margin-top: 8px;
+      font-weight: bold;
+    }
+    input, textarea, select, button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #007acc;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Contact Us</h1>
+  <form action="#" method="post">
+    
+    <!-- Contact Info -->
+    <fieldset>
+      <legend>Your Contact Information</legend>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="tel">Phone Number:</label>
+      <input type="tel" id="tel" name="tel" placeholder="+92-xxx-xxxxxxx">
+      
+      <label for="city">City:</label>
+      <input list="cities" id="city" name="city" placeholder="Start typing...">
+      <datalist id="cities">
+        <option value="Lahore">
+        <option value="Karachi">
+        <option value="Islamabad">
+        <option value="Multan">
+        <option value="Peshawar">
+      </datalist>
+    </fieldset>
+    
+    <!-- Message Section -->
+    <fieldset>
+      <legend>Your Message</legend>
+      
+      <label for="subject">Subject:</label>
+      <select id="subject" name="subject" required>
+        <option value="">--Choose a subject--</option>
+        <option value="general">General Inquiry</option>
+        <option value="support">Support Request</option>
+        <option value="feedback">Feedback</option>
+      </select>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </fieldset>
+    
+    <button type="submit">Send Message</button>
+  </form>
+</body>
+</html>

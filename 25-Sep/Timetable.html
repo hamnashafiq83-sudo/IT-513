@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Class Timetable</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+    }
+    caption {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: center;
+    }
+    thead {
+      background-color: #f0f0f0;
+    }
+    tfoot {
+      background-color: #f9f9f9;
+      font-style: italic;
+    }
+    colgroup col:first-child {
+      background-color: #e6f7ff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Weekly Class Timetable</caption>
+
+    <colgroup>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+
+    <thead>
+      <tr>
+        <th scope="col">Day</th>
+        <th scope="col">8–9 AM</th>
+        <th scope="col">9–10 AM</th>
+        <th scope="col">10–11 AM</th>
+        <th scope="col">11–12 PM</th>
+        <th scope="col">12–1 PM</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row">Monday</th>
+        <td>Math</td>
+        <td>English</td>
+        <td rowspan="2">Lab</td>
+        <td>History</td>
+        <td>Break</td>
+      </tr>
+      <tr>
+        <th scope="row">Tuesday</th>
+        <td>Science</td>
+        <td>Math</td>
+        <td>Geography</td>
+        <td>Break</td>
+      </tr>
+      <tr>
+        <th scope="row">Wednesday</th>
+        <td>Computer</td>
+        <td>English</td>
+        <td>Math</td>
+        <td colspan="2">Project Work</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="6">Note: Timetable subject to change after midterm.</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
