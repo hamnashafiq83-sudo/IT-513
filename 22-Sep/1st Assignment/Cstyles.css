@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  line-height: 1.5;
+}
+/* Header styling */
+header {
+  background-color: black;
+  color: darkred;
+  padding: 20px;
+  text-align: center;
+}
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+header li {
+  display: inline-block;
+  margin: 0 15px;
+}
+header a {
+  padding:20px;
+  color:darkred;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+header a:hover {
+  color:red;
+  text-shadow: 0 0 10px crimson;
+}
+/* main design */
+section{
+    background-color:darkred;
+    color:white;
+    border-radius: 30px;
+    padding:20px;
+    margin:50px auto;
+    width:80%;
+    box-shadow: 0 0 20px red;
+}
+section h2{
+    color:white;
+    padding:10px;
+    margin:10px 20px;
+    text-align:center;
+    border-radius:6px;
+}
+section h3{
+    background-color:black;
+    color:white;
+    padding:10px;
+    margin:10px 20px;
+    text-align:center;
+    text-decoration: underline;
+    border-radius:6px;
+}
+article:first-of-type  > p{
+  box-sizing: 8px;
+  background-color:#111;
+  color:white;
+  padding:10px;
+  margin:10px 20px;
+}
+
+/* Form fields */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  background-color: #111;
+  color: red;
+  border: 1px solid rgba(255, 0, 0, 0.7);
+  padding:10px;
+  margin:5px 5px;
+  border-radius: 6px;
+  width: 100%;
+  margin-top: 6px;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+select:focus,
+textarea:focus{
+  outline: none;
+  border-color:darkred;
+  box-shadow: 0 0 6px red;
+}
+fieldset {
+  border: none;
+  color:white;
+  padding: 0;
+  margin: 0;
+}
+
+/*Label and placeholder styling */
+label {
+  display: block;
+  color: white;
+  margin-bottom: 6px;     
+}
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  border: 2px solid darkred;
+  padding: 10px;
+  border-radius:6px;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+input[type="submit"]:hover{
+  background-color: red;
+  color: black;
+  border: 2px solid red;
+  margin: 0 10px;
+}
+.form-buttons {
+  text-align: center;
+}
+
+article address{
+  background-color: #111;
+  color:red;
+  margin:20px 10px;
+  padding:5px;
+}
+article address a{
+  background-color:#111;
+  color:white;
+  margin:0 10px;
+  padding:5px;
+
+}
+article address a:hover{
+  background-color:red;
+}
+table{
+    border-collapse: collapse;
+    margin: 20px auto;
+    max-width:900px;
+    width:90%;
+}
+
+table, th, td {
+  border: 1px solid darkred;
+}
+
+table th{
+    background-color:#111;
+    color:red;
+    text-align:center;
+    font-weight:bold;
+    margin: 0 8px;
+    padding:10px
+}
+table td{
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:8px;
+    margin: 0 5px;
+}
+
+table tbody tr:hover {
+  background-color: crimson;
+  color: black;
+  transition: 0.3s;
+}
+summary{
+  background-color:#111;
+  color:white;
+  text-align:center;
+  font-weight:bold;
+  margin: 7px 10px;
+  padding:10px
+}
+
+details p{
+  background-color: red;
+  border-radius:6px;
+  padding:5px;
+  margin:0 auto;
+}
+
+/* Footer styling */
+footer {
+  background-color: black;
+  color:darkred;
+  padding: 20px;
+  text-align: center;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 15px;
+  text-align:center;
+}
+footer li {
+  display: inline;
+  margin: 0px 25px;
+}
+footer a {
+  padding: 30px;
+  color:darkred;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+footer a:hover {
+  color: darkred;
+  text-shadow: 0 0 10px red;
+}
