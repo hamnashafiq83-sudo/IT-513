@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>WebDev Course - Contact Us</title>
+</head>
+<body class="font-sans bg-black text-white leading-relaxed">
+    <header class="bg-black text-red-900 p-8 text-center">
+        <h1 class="text-3xl font-bold mb-4">WebDev Course</h1>
+        <nav>
+            <ul class="flex justify-center gap-8">
+                <li><a href="index.html" class="text-red-900 hover:text-red-500 hover:drop-shadow-[0_0_10px_crimson] font-bold transition">Home</a></li>
+                <li><a href="registration.html" class="text-red-900 hover:text-red-500 hover:drop-shadow-[0_0_10px_crimson] font-bold transition">Registration</a></li>
+                <li><a href="products.html" class="text-red-900 hover:text-red-500 hover:drop-shadow-[0_0_10px_crimson] font-bold transition">Products</a></li>
+                <li><a href="contact.html" class="text-red-900 hover:text-red-500 hover:drop-shadow-[0_0_10px_crimson] font-bold transition">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bg-red-900 text-white p-8 rounded-2xl shadow-[0_0_20px_red] w-4/5 mx-auto my-10">
+            <h2 class="text-white text-center font-bold text-2xl">Contact Us</h2>
+            
+            <article>
+                <h3 class="bg-black text-white text-center font-bold mx-2 my-2 p-3 text-2xl ">Get in Touch</h3>
+                <p class="bg-[#111] text-white mx-2 my-2 p-2 rounded-md">We'd love to hear from you. Please use the form below to send us a message.</p>
+                
+                <form action="contact-success.html" method="get">
+                    <p>
+                        <label for="contact-name">Your Name:</label>
+                        <input type="text" class="bg-[#111] text-red-500 border border-red-700 p-2 rounded-md w-full mt-2 focus:border-red-700 focus:shadow-[0_0_6px_red]" id="contact-name" name="contact-name" required>
+                    </p>
+                    <p>
+                        <label for="contact-email">Your Email:</label>
+                        <input type="email" class="bg-[#111] text-red-500 border border-red-700 p-2 rounded-md w-full mt-2 focus:border-red-700 focus:shadow-[0_0_6px_red]" id="contact-email" name="contact-email" required>
+                    </p>
+                    <p>
+                        <label for="contact-subject">Subject:</label>
+                        <select id="contact-subject" class="bg-[#111] text-red-500 border border-red-700 p-2 rounded-md w-full mt-2 focus:border-red-700 focus:shadow-[0_0_6px_red]" name="contact-subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="course">Course Information</option>
+                            <option value="technical">Technical Support</option>
+                            <option value="billing">Billing Question</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="contact-message">Message:</label>
+                        <textarea id="contact-message" class="bg-[#111] text-red-500 border border-red-700 p-2 rounded-md w-full mt-2 focus:border-red-700 focus:shadow-[0_0_6px_red]"name="contact-message" rows="6" cols="50" required></textarea>
+                    </p>
+                    <p>
+                        <label>Preferred Contact Method:</label><br>
+                        <input type="radio" class="bg-[#111] text-red-500 border border-red-700 p-2 rounded-md w-full mt-2 focus:border-red-700 focus:shadow-[0_0_6px_red]" id="contact-email-method" name="contact-method" value="email" checked>
+                        <label for="contact-email-method">Email</label>
+                        
+                        <input type="radio" class="bg-[#111] text-red-500 border border-red-700 p-2 rounded-md w-full mt-2 focus:border-red-700 focus:shadow-[0_0_6px_red]" id="contact-phone-method" name="contact-method" value="phone">
+                        <label for="contact-phone-method">Phone</label>
+                    </p>
+                    <p>
+                        <input type="submit" class="bg-black text-red-800 border-2 text-white mx-1 my-1 px-4 rounded-md hover:bg-red-800  hover:text-black border-2 border-red-900 mx-1 transition " value="Send Message">
+                    </p>
+                </form>
+            </article>
+            
+            <article>
+                <h3 class="bg-black text-white text-center font-bold mx-2 my-2 p-3 text-2xl">Our Location</h3>
+                <address class="bg-[#111] text-red-500 p-2 mx-1 my-1">
+                    WebDev Training Center<br>
+                    123 Learning Street<br>
+                    Tech City, TC 10101<br>
+                    Email: <a href="mailto:info@webdevcourse.com" class="text-white mx-1 my-1 p-2 hover:bg-red-700 hover:text-black transition">info@webdevcourse.com</a><br>
+                    Phone: <a href="tel:+15551234567" class="text-white mx-1 my-1 p-2 hover:bg-red-700 hover:text-black transition">(555) 123-4567</a>
+                </address>
+            </article>
+            
+            <article>
+                <h3 class="bg-black text-white text-center font-bold mx-2 my-2 p-3 text-2xl">Office Hours</h3>
+                <table class="table-auto border-collaspe w-[80%] max-w-[800px] mx-auto my-5 border border-red-800">
+                   <tbody class=" divide-y divide-red-800">
+                    <tr>
+                        <td class="bg-black text-white text-center border-x border-red-800 my-1 p-1">Monday - Friday</td>
+                        <td class="bg-black text-white text-center border-x border-red-800 mx-1 my-1 p-1">9:00 AM - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-black text-white text-center border-x border-red-800 mx-1 my-1 p-1">Saturday</td>
+                        <td class="bg-black text-white text-center border-x border-red-800 mx-1 my-1 p-1">10:00 AM - 4:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-black text-white text-center border-x border-red-800 mx-1 my-1 p-1">Sunday</td>
+                        <td class="bg-black text-white text-center border-x border-red-800 mx-1 my-1 p-1">Closed</td>
+                    </tr>
+                </tbody>
+                </table>
+            </article>
+            
+            <article>
+                <h3 class="bg-black text-white text-center font-bold mx-2 my-2 p-3 text-2xl ">Frequently Asked Questions</h3>
+                <details>
+                    <summary class="bg-[#111] text-white text-center font-bold text-lg mx-1 my-1 p-2">What prerequisites do I need for the courses?</summary>
+                    <p class="bg-red-500 text-white p-1 ">Our beginner courses require no prior experience. For intermediate and advanced courses, we recommend basic computer literacy and familiarity with using web browsers.</p>
+                </details>
+                
+                <details>
+                    <summary class="bg-[#111] text-white text-center font-bold text-lg mx-1 my-1 p-2">How long do I have access to course materials?</summary>
+                    <p class="bg-red-500 text-white p-1 ">You'll have lifetime access to all course materials once you enroll, including any future updates to the content.</p>
+                </details>
+                
+                <details>
+                    <summary class="bg-[#111] text-white text-center font-bold text-lg mx-1 my-1 p-2">Do you offer payment plans?</summary>
+                    <p class="bg-red-500 text-white p-1 ">Yes, we offer flexible payment plans for all our courses. Contact us for more information about available options.</p>
+                </details>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p class="text-center bg-black text-red-900 p-8">&copy; 2023 Web Development Course. All rights reserved.</p>
+        <nav>
+            <ul class="flex justify-center gap-8 font-bold ">
+                <li><a href="index.html" class="text-red-800 hover:text-red-500 hover:drop-shadow-[0_0_10px_red] transition">Home</a></li>
+                <li><a href="registration.html" class="text-red-800 hover:text-red-500 hover:drop-shadow-[0_0_10px_red] transition">Registration</a></li>
+                <li><a href="products.html" class="text-red-800 hover:text-red-500 hover:drop-shadow-[0_0_10px_red] transition">Products</a></li>
+                <li><a href="contact.html" class="text-red-800 hover:text-red-500 hover:drop-shadow-[0_0_10px_red] transition">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p class="text-red-900 text-center mx-3 my-3">This website demonstrates HTML5 semantic structure without any CSS styling.</p>
+    </footer>
+</body>
+</html>
